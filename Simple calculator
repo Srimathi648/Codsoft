@@ -1,0 +1,42 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    cout<<"Welcome"<<"\n";
+    cout<<"Enter any two numbers : "<<"\n";
+    int a,b;
+    cin>>a>>b;
+    cout<<"Enter the operation to do: "<<"\n";
+    char op;
+    cin>>op;
+    cout<<"Your Answer is: ";
+    switch(op)
+    {
+        case '+':
+        cout<<(a+b)<<"\n";
+        break;
+        case '-':
+        cout<<(a-b)<<"\n";
+        break;
+        case '*':
+        cout<<(a*b)<<"\n";
+        break;
+        case '/':
+        if(b!=0)
+        cout<<(a/b)<<"\n";
+        else
+        cout<<"Invalid "<<"\n";
+        break;
+        case '%':
+        cout<<(a%b)<<"\n";
+        break;
+        default:
+        cout<<"Invalid"<<"\n";
+        break;
+    }
+        cout<<"Thank you"<<"\n";
+        return 0;
+    
+    
+}
