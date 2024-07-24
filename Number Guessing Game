@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+int main()
+{
+    srand(time(0)^clock());
+    int lim;
+    cout<<"Enter the limit value: ";
+    cin>>lim;
+    
+    int num=rand()%lim;
+    int gn;
+    cout<<"Enter the your guess number: "<<"\n";
+    do
+    {
+        cin>>gn;
+        if(num>gn)
+        {
+            cout<<"Your guess number is smaller than random number";
+        }
+        else if(num<gn)
+        {
+           cout<<"Your guess number is greater than random number"; 
+        }
+        else
+        {
+            cout<<"Your guess number is equal to random number"; 
+        }
+    }while(num!=gn);
+    return 0;
+}
